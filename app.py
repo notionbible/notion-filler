@@ -8,24 +8,25 @@ from supabase import create_client, Client
 load_dotenv()
 
 # ---------- ENV ----------
-NOTION_TOKEN = os.getenv("NOTION_TOKEN", "")
-NOTION_DB_ID = os.getenv("NOTION_DB_ID", "")
+NOTION_TOKEN = os.getenv("NOTION_TOKEN", "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")
+NOTION_DB_ID = os.getenv("NOTION_DB_ID", "280fa4f6a016801aa035ebf830af16a1")
 
 PROP_PASSAGE   = os.getenv("NOTION_PROP_PASSAGE", "PassageKey")
-PROP_VERSION   = os.getenv("NOTION_PROP_VERSION", "Version")
+PROP_VERSION   = os.getenv("NOTION_PROP_VERSION", "version")
 PROP_TEXT      = os.getenv("NOTION_PROP_TEXT", "B_Text")
 PROP_LOAD      = os.getenv("NOTION_PROP_LOAD", "Load")
 PROP_LASTSYNC  = os.getenv("NOTION_PROP_LASTSYNCED", "LastSynced")
 
-SUPA_URL   = os.getenv("SUPABASE_URL", "")
-SUPA_KEY   = os.getenv("SUPABASE_KEY", "")
-SUPA_TABLE = os.getenv("SUPA_TABLE", "bible_texts")
-COL_PASS   = os.getenv("SUPA_COL_PASSAGE", "passage_en")
+SUPA_URL   = os.getenv("SUPABASE_URL", "https://qjkhvclskqzdvxeuepor.supabase.co")
+SUPA_KEY   = os.getenv("SUPABASE_KEY", "sb_secret_gfVnzlUiJJjsoa-N9dhZtg_GqhXq4Ef")
+SUPA_TABLE = os.getenv("SUPA_TABLE", "노션DB")
+COL_PASS   = os.getenv("SUPA_COL_PASSAGE", "PassageKey")
 COL_VER    = os.getenv("SUPA_COL_VERSION", "version")
-COL_TEXT   = os.getenv("SUPA_COL_TEXT", "text")
+COL_TEXT   = os.getenv("SUPA_COL_TEXT", "B_Text")
+
 
 DEFAULT_VERSION = os.getenv("DEFAULT_VERSION", "KJV")
-MAX_RICH_TEXT   = int(os.getenv("MAX_RICH_TEXT", "1999"))
+MAX_RICH_TEXT   = int(os.getenv("MAX_RICH_TEXT", "31000"))
 SLEEP_MS        = int(os.getenv("SLEEP_MS", "150"))
 
 assert NOTION_TOKEN and NOTION_DB_ID and SUPA_URL and SUPA_KEY, "환경변수(.env) 설정을 확인하세요."
