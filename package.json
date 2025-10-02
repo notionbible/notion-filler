@@ -1,0 +1,10 @@
+{
+  "name": "notion-filler",
+  "version": "1.0.0",
+  "type": "module",
+  "private": true,
+  "dependencies": {
+    "@supabase/supabase-js": "^2.45.0",
+    "@notionhq/client": "^2.2.10"
+  }
+}
