@@ -18,7 +18,7 @@ PROP_LOAD      = os.getenv("NOTION_PROP_LOAD", "Load")
 PROP_LASTSYNC  = os.getenv("NOTION_PROP_LASTSYNCED", "LastSynced")
 
 SUPA_URL   = os.getenv("SUPABASE_URL", "https://qjkhvclskqzdvxeuepor.supabase.co")
-SUPA_KEY   = os.getenv("SUPABASE_KEY", "sb_secret_gfVnzlUiJJjsoa-N9dhZtg_GqhXq4Ef")
+SUPA_KEY   = os.getenv("SUPABASE_KEY", "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InFqa2h2Y2xza3F6ZHZ4ZXVlcG9yIiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTc1OTIzNTYxOSwiZXhwIjoyMDc0ODExNjE5fQ.jMebE0xoT7sAefCIURdGg5U9ggdhWXAz4mdrS_Q3fB4")
 SUPA_TABLE = os.getenv("SUPA_TABLE", "노션DB")
 COL_PASS   = os.getenv("SUPA_COL_PASSAGE", "PassageKey")
 COL_VER    = os.getenv("SUPA_COL_VERSION", "version")
